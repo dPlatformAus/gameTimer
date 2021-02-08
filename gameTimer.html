@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
+  <script src="gameTimer.js"></script>
+  <link rel="stylesheet" href="gameTimer.css"></script>
+</head>
+<body onload="bodyLoad()">
+    <div id="arena">&nbsp;
+        <div id="times">
+          <h1>
+            <span id="playerLeftTime">0</span>
+            <span id="totalTime">0</span>
+            <span id="playerRightTime">0</span>
+          </h1>
+        </div>
+        <div id="button-left" onclick="timePlayerRight()">&nbsp;</div>
+        <div id="button-right" onclick="timePlayerLeft()">&nbsp;</div>
+        <div id="button-reset" onclick="resetGame()">Reset</div>
+        <div id="input-timeLength">
+          <div id="input-timeLength-label">Game Time</div>
+          <div id="input-timeLength-label"><input type="text" id="timeLength" name="timeLength" size="10"></div>
+          <div id="input-timeLength-label">Seconds</div>
+        </div>
+    </div>    
+</body>
+</html>
